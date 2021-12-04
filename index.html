@@ -281,7 +281,10 @@
       <nav class="menu-nav">
         <ul class="menu-list">
           <li class="list"><a class="logo" href="index.html">Web</a><a class="logo-st" href="index.html">Studio</a></li>
-          <li class="list"><a href="#" class="header-menu">Agencja</a></li>
+          <li class="list">
+            <a href="index.html" class="header-menu">Agencja</a>
+            <div class="header-underline"></div>
+          </li>
           <li class="list"><a href="portfolio.html" class="header-menu">Portfolio</a></li>
           <li class="list"><a href="#"class="header-menu">Kontakt</a></li>
           <li class="list"><a href="tel:+48111111111"class="header-tel">
@@ -294,7 +297,7 @@
  <main class="main">
     <section class="main-order-section">
     <h1 class="main-order-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-    <button class="main-order-button"><p class="main-order-button-content">Zamów usługe</p></button>
+    <button class="main-order-button" data-modal-open><p class="main-order-button-content">Zamów usługe</p></button>
     <img src="images/mainimage.jpg" alt="main image">
     </section>
     <section class="stats-section">
@@ -337,12 +340,21 @@
     <h2 class="jobs-title">Czym się zajmujemy</h2>
     <ul class="jobs">
       <li class="jobs-list">
-      <img src="images/jobs/jobimage1.jpg" alt="Development" class="jobs-image">
+        <div class="jobs-desc">
+          <p class="jobs-desc-text">APLIKACJE KOMPUTEROWE</p>
+        </div>
+        <img src="images/jobs/jobimage1.jpg" alt="Development" class="jobs-image">
       </li>
       <li class="jobs-list">
+        <div class="jobs-desc">
+          <p class="jobs-desc-text">APLIKACJE MMOBILNE</p>
+        </div>
         <img src="images/jobs/jobimage2.jpg" alt="Mobile" class="jobs-image">
       </li>
       <li class="jobs-list">
+        <div class="jobs-desc">
+          <p class="jobs-desc-text">ROZWIĄZANIA GRAFICZNE</p>
+        </div>
         <img src="images/jobs/jobimage3.jpg" alt="UI" class="jobs-image">
       </li>
     </ul>
@@ -574,6 +586,11 @@
     </section>
   </address>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>X</button>
+    </div>
+  </div>
 <script src="./js/modal.js"></script>
 </body>
 </html>
