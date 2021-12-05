@@ -529,6 +529,18 @@ p {
   stroke: currentColor;
   fill: currentColor;
 }
+.join-us {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+
+  color: #ffffff;
+}
 .join-us-section {
   padding-left: 100px;
 }
