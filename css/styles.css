@@ -42,12 +42,6 @@ p {
   padding-top: 25px;
 }
 .list::after {
-  position: absolute;
-  top: 76px;
-  width: 60px;
-  margin-left: 2.9em;
-  border: 2px solid #2196f3;
-  border-radius: 20%;
 }
 .logo {
   cursor: pointer;
